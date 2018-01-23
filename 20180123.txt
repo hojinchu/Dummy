@@ -1,0 +1,59 @@
+http://211.238.142.150:8095/Downloads/
+>sqlplus sys/oracle as sysdba
+
+* DI(Dependency Injection) 실습 개요
+	-의존관계
+	-
+
+
+
+
+- 프로젝트 명 : spring01
+- 프로젝트성격 : 콘솔 기반 프로젝트
+- 성적 처리
+  국어,영어,수학 점수를 입력받아 간단하게 총점과 평균을 
+  출력하는 프로그램 구현
+- 물리적 파일 구성
+	Recorde.java		->인터페이스
+	RecordView.java		->인터페이스
+	RecordImpl1.java	->Record 인터페이스를 구현하는 클래스
+	RecordImpl2.java	->Record 인터페이스를 구현하는 클래스
+	RecordViewImpl.java	->RecordView 인터페이스를 구현하는 클래스
+	Main.java		->main() 메소드를 포함한 클래스
+
+
+
+오라클 패스워드 아래로 설정해서 설치함.
+spring006$
+
+
+
+
+- 프로젝트 명 : spring03
+- 프로젝트성격 : 콘솔 기반 프로젝트
+- 프로그램 구동에 필요한 데이터베이스 연동 과정에서
+  오라클에 대해서 로컬 서버와 원격 서버를 동시에 사용할 수 있도록
+  프로그램을 구현한다.
+  
+
+- 물리적 파일 구성
+	MemberDTO.java		→ 사용자 정의 자료형 클래스 (DTO)
+	IDAO.java		→ 인터페이스
+	LocalDAO.java		→ 클래스. IDAO 인터페이스 구현.
+	RemoteDAO.java		→ 클래스. IDAO 인터페이스 구현.
+	MemberDAO.java		→ 클래스. DAO 객체의 목록(리스트) 출력
+				   메소드를 호출하는 클래스.
+				   즉, DAO 인터페이스를 구현한 클래스에 대해
+				  의존관계 설정.
+	
+	Main.java		→main() 메소드를 포함한  테스트 클래스
+	applicationContext.xml  →스프링 환경 설정.
+
+
+
+
+C:\Users\hh>sqlplus sys@211.238.142.159 as sysdba
+
+패스워드: oracle
+
+
